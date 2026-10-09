@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="it" data-lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Wedding Apulia - Fotografia di matrimonio · Lecce, Salento, Puglia</title>
+<meta name="description" content="Real Wedding Apulia - Antonio Cantoro, fotografia e film di matrimonio in Salento e Puglia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F2EA;
+  --bg2:#ECE7DA;
+  --ink:#2A2B26;
+  --muted:#6C6C63;
+  --gold:#F2B50F;
+  --gold-ink:#8A6200;
+  --line:rgba(42,43,38,.15);
+  --dark:#1F1D18;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;scroll-padding-top:90px;}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img,video{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button,input,select,textarea{font:inherit;color:inherit;}
+button{background:none;border:0;cursor:pointer;}
+::selection{background:var(--gold);color:var(--ink);}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+html[data-lang="it"] .en{display:none !important;}
+html[data-lang="en"] .it{display:none !important;}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,64px);}
+.eyebrow{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-ink);font-weight:400;}
+.serif{font-family:var(--serif);font-weight:300;letter-spacing:-.012em;}
+.h1{font-family:var(--serif);font-weight:300;font-size:clamp(46px,6vw,98px);line-height:1;letter-spacing:-.022em;}
+.h2{font-family:var(--serif);font-weight:300;font-size:clamp(34px,4.4vw,66px);line-height:1.04;letter-spacing:-.018em;}
+.h3{font-family:var(--serif);font-weight:300;font-size:clamp(28px,3vw,44px);line-height:1.08;letter-spacing:-.012em;}
+.muted{color:var(--muted);}
+.arrow{display:inline-block;transition:transform .35s var(--ease);}
+a:hover .arrow,button:hover .arrow{transform:translate(3px,-3px);}
+.lnk{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-ink);padding-bottom:6px;border-bottom:1px solid rgba(138,98,0,.4);transition:border-color .3s,color .3s;}
+.lnk:hover{border-color:var(--gold);color:var(--ink);}
+.sec{padding:clamp(70px,10vw,150px) 0;}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity 1s var(--ease),transform 1s var(--ease);}
+.rv.in{opacity:1;transform:none;}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.ph{overflow:hidden;background:var(--bg2);}
+.ph img{width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.07);transition:opacity 1.1s var(--ease),transform 1.6s var(--ease);}
+.rv.in .ph img,.ph.rv.in img{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}.rv{opacity:1;transform:none;}.ph img{opacity:1;transform:none;}}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:500;transition:transform .5s var(--ease),background .4s,border-color .4s;border-bottom:1px solid transparent;}
+header.solid{background:rgba(245,242,234,.9);backdrop-filter:blur(12px);border-color:var(--line);}
+header.hide{transform:translateY(-110%);}
+body.menu-open header.hide{transform:none;}
+.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px;gap:20px;}
+.hd-logo img{height:28px;width:auto;}
+.hd nav{display:flex;gap:34px;}
+.hd nav a{font-size:13px;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .3s,color .3s;}
+.hd nav a:hover,.hd nav a.on{border-color:var(--gold);}
+.hd-r{display:flex;align-items:center;justify-content:flex-end;gap:26px;}
+.lang{display:flex;gap:8px;font-size:12px;letter-spacing:.05em;}
+.lang button{opacity:.45;padding:2px 0;border-bottom:1px solid transparent;transition:opacity .3s;}
+.lang button.on{opacity:1;border-color:var(--gold);}
+.cta-top{font-size:13px;color:var(--ink);padding-bottom:6px;border-bottom:2px solid var(--gold);display:inline-flex;gap:26px;align-items:center;transition:gap .35s var(--ease);}
+.cta-top:hover{gap:34px;}
+.burger{display:none;position:relative;width:44px;height:44px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--line);}
+.burger i{position:absolute;left:50%;top:50%;width:17px;height:1.3px;margin-left:-8.5px;background:var(--ink);transition:transform .5s var(--ease);}
+.burger i:nth-child(1){transform:translateY(-3.5px);}.burger i:nth-child(2){transform:translateY(3.5px);}
+body.menu-open .burger i:nth-child(1){transform:rotate(45deg);}
+body.menu-open .burger i:nth-child(2){transform:rotate(-45deg);}
+#drawer{position:fixed;inset:0;z-index:450;background:var(--bg);display:flex;flex-direction:column;justify-content:center;gap:2px;padding:0 8vw;clip-path:inset(0 0 100% 0);transition:clip-path .75s var(--ease);}
+#drawer.open{clip-path:inset(0);}
+#drawer a{font-family:var(--serif);font-weight:300;font-size:clamp(40px,12vw,76px);line-height:1.15;letter-spacing:-.02em;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .8s var(--ease);}
+#drawer.open a{opacity:1;transform:none;}
+#drawer.open a:nth-child(1){transition-delay:.2s}#drawer.open a:nth-child(2){transition-delay:.26s}#drawer.open a:nth-child(3){transition-delay:.32s}#drawer.open a:nth-child(4){transition-delay:.38s}
+@media(max-width:900px){.hd{grid-template-columns:1fr auto;}.hd nav,.cta-top{display:none;}.burger{display:block;}}
+
+/* hero */
+.hero{padding-top:clamp(120px,13vw,170px);}
+.hero-top{display:grid;grid-template-columns:1fr 17.5rem;gap:clamp(24px,5vw,90px);align-items:end;}
+.hero .eyebrow{display:block;margin-bottom:clamp(20px,2.4vw,34px);}
+.h1 .ln{display:block;overflow:hidden;padding:0 0 .08em;margin-bottom:-.08em;}
+.h1 .ln>span{display:block;transform:translateY(108%);animation:up 1.2s var(--ease) .15s forwards;}
+.h1 .ln:nth-child(2)>span{animation-delay:.3s;}
+@keyframes up{to{transform:none;}}
+.hero-side{padding-bottom:10px;opacity:0;animation:fade 1.2s var(--ease) .7s forwards;}
+.hero-side p{color:var(--muted);font-size:14px;margin-bottom:22px;}
+@keyframes fade{to{opacity:1;}}
+.hero-media{position:relative;margin-top:clamp(36px,5vw,70px);overflow:hidden;aspect-ratio:2.2/1;background:var(--bg2);}
+.hero-media video{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:settle 2.4s var(--ease) .2s forwards;}
+@keyframes settle{to{transform:none;}}
+.play{position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:12px;height:48px;padding:0 20px 0 6px;border-radius:40px;background:rgba(245,242,234,.92);backdrop-filter:blur(8px);font-size:12.5px;letter-spacing:.04em;transition:background .3s,color .3s;}
+.play i{width:36px;height:36px;border-radius:50%;background:var(--gold);display:grid;place-items:center;transition:background .3s;}
+.play i::after{content:"";border-left:9px solid var(--ink);border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:3px;}
+.play:hover{background:var(--gold);color:var(--ink);}
+.play:hover i{background:var(--ink);}
+.play:hover i::after{border-left-color:var(--gold);}
+.cap{margin-top:12px;font-size:11.5px;color:var(--muted);letter-spacing:.01em;}
+@media(max-width:860px){.hero-top{grid-template-columns:1fr;}.hero-media{aspect-ratio:4/5;}}
+
+/* sguardo */
+.sg{padding:clamp(70px,9vw,130px) 0 clamp(50px,6vw,90px);}
+.sg .wrap{display:grid;grid-template-columns:14rem 1fr;gap:clamp(20px,5vw,90px);}
+.sg-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,50px);margin-top:clamp(24px,3vw,40px);}
+.sg-cols p{color:var(--muted);font-size:14px;max-width:34ch;}
+.rule{border:0;border-top:1px solid var(--line);}
+@media(max-width:860px){.sg .wrap{grid-template-columns:1fr;gap:16px;}.sg-cols{grid-template-columns:1fr;}}
+
+/* stories */
+.stories-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,80px);}
+.stories-head .eyebrow{display:block;margin-bottom:18px;}
+.stories-head p{color:var(--muted);font-size:14px;max-width:25ch;padding-bottom:8px;}
+.st{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(14px,2vw,28px);}
+.st-a{grid-column:1/8;}
+.st-a .ph{aspect-ratio:3/2;cursor:zoom-in;}
+.st-b{grid-column:9/13;margin-top:clamp(40px,7vw,110px);}
+.st-b .ph{aspect-ratio:4/3;cursor:zoom-in;}
+.st-b .h3{margin:26px 0 10px;}
+.st-b .cap{margin-top:22px;}
+.st-b p.muted{font-size:14px;max-width:32ch;}
+.st-c{grid-column:1/13;display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(14px,2vw,28px);margin-top:clamp(60px,8vw,130px);align-items:center;}
+.st-c .tx{grid-column:1/6;}
+.st-c .tx .eyebrow{display:block;margin-bottom:18px;}
+.st-c .tx .h3{margin-bottom:18px;}
+.st-c .tx p{color:var(--muted);font-size:14px;max-width:36ch;}
+.st-c .im{grid-column:7/13;}
+.st-c .ph{aspect-ratio:3/2;cursor:zoom-in;}
+@media(max-width:860px){
+  .st{display:block;}.st-b{margin-top:44px;}
+  .st-c{display:block;margin-top:60px;}.st-c .im{margin-top:28px;}
+}
+
+/* strip */
+.strip{padding:0 0 clamp(70px,9vw,130px);}
+.strip-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;gap:20px;}
+.strip-head .hint{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding:0 clamp(20px,5vw,64px) 6px;cursor:grab;scrollbar-width:none;}
+.rail::-webkit-scrollbar{display:none;}
+.rail.drag{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto;}
+.rail figure{flex:none;scroll-snap-align:start;overflow:hidden;background:var(--bg2);}
+.rail img{height:clamp(220px,30vw,420px);width:auto;max-width:none;user-select:none;-webkit-user-drag:none;transition:transform 1.2s var(--ease);}
+.rail figure:hover img{transform:scale(1.04);}
+
+/* services */
+.svc{background:var(--bg2);}
+.svc-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,6vw,110px);align-items:start;}
+.svc-left{position:sticky;top:110px;}
+.svc-left .stack{position:relative;aspect-ratio:1.38/1;background:var(--bg);overflow:hidden;}
+.svc-left .stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s var(--ease);}
+.svc-left .stack img.on{opacity:1;}
+.svc-left .cap{min-height:1.5em;margin-top:24px;}
+.svc-left p.muted{margin-top:18px;font-size:14px;max-width:38ch;}
+.svc-right .h2{margin:16px 0 clamp(26px,3vw,44px);}
+.svc-list{border-top:1px solid var(--line);}
+.it-row{padding:22px 0;border-bottom:1px solid var(--line);cursor:pointer;}
+.it-row h3{font-family:var(--serif);font-weight:300;font-size:clamp(23px,2.1vw,30px);line-height:1.15;letter-spacing:-.01em;display:flex;justify-content:space-between;gap:14px;align-items:center;transition:color .3s;}
+.it-row h3::after{content:"+";font-family:var(--sans);font-size:18px;font-weight:300;color:var(--gold-ink);transition:transform .45s var(--ease);}
+.it-row.on h3::after{transform:rotate(45deg);}
+.it-row p{color:var(--muted);font-size:14px;max-width:48ch;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s var(--ease),opacity .5s,margin .5s;}
+.it-row.on p{max-height:140px;opacity:1;margin-top:10px;}
+@media(max-width:860px){.svc-grid{grid-template-columns:1fr;}.svc-left{position:static;order:2;}.svc-right{order:1;}}
+
+/* about */
+.ab{display:grid;grid-template-columns:11rem 1fr 18rem;gap:clamp(24px,4vw,70px);align-items:center;}
+.ab-ph{text-align:center;}
+.ab-ph .c{width:11rem;height:11rem;border-radius:50%;overflow:hidden;background:var(--bg2);margin:0 auto 16px;}
+.ab-ph .c img{width:100%;height:100%;object-fit:cover;}
+.ab-ph span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-ink);}
+.ab-mid .eyebrow{display:block;margin-bottom:10px;}
+.ab-mid .h2{margin-bottom:16px;}
+.ab-mid p{color:var(--muted);font-size:14px;max-width:44ch;}
+.ab-r p{color:var(--muted);font-size:14px;margin-bottom:20px;}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:clamp(40px,5vw,70px);padding-top:26px;border-top:1px solid var(--line);}
+.facts b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(36px,4vw,56px);line-height:1;letter-spacing:-.02em;}
+.facts span{display:block;margin-top:6px;font-size:12.5px;color:var(--muted);}
+@media(max-width:900px){.ab{grid-template-columns:1fr;}.ab-ph{text-align:left;}.ab-ph .c{margin:0 0 14px;}}
+
+/* process */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,3vw,44px);margin-top:clamp(34px,4.5vw,64px);}
+.step{border-top:1px solid var(--ink);padding-top:18px;}
+.step b{font-size:12px;font-weight:400;color:var(--gold-ink);letter-spacing:.07em;display:block;margin-bottom:34px;}
+.step h3{font-family:var(--serif);font-weight:300;font-size:clamp(24px,2.2vw,32px);line-height:1.1;margin-bottom:10px;}
+.step p{color:var(--muted);font-size:14px;max-width:27ch;}
+@media(max-width:860px){.proc{grid-template-columns:1fr 1fr;row-gap:40px;}}
+@media(max-width:520px){.proc{grid-template-columns:1fr;}}
+
+/* reviews */
+.rev-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--muted);letter-spacing:.03em;}
+.feat{margin-top:clamp(30px,4vw,60px);padding-left:clamp(0px,7vw,110px);min-height:clamp(200px,20vw,260px);position:relative;}
+.feat blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.9vw,58px);line-height:1.08;letter-spacing:-.018em;max-width:19em;transition:opacity .45s;}
+.feat .who{margin-top:24px;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-ink);transition:opacity .45s;}
+.feat.swap blockquote,.feat.swap .who{opacity:0;}
+.small{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,44px);margin-top:clamp(30px,4vw,56px);padding-top:26px;border-top:1px solid var(--line);padding-left:clamp(0px,7vw,110px);}
+.small button{text-align:left;display:block;transition:opacity .3s;}
+.small button:hover{opacity:.65;}
+.small p{font-size:14px;color:var(--ink);margin-bottom:14px;max-width:34ch;}
+.small span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-ink);}
+@media(max-width:860px){.small{grid-template-columns:1fr;padding-left:0;}.feat{padding-left:0;}}
+
+/* contact */
+.ct{background:var(--bg2);}
+.ct-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,6vw,120px);align-items:start;}
+.ct-l .eyebrow{display:block;margin-bottom:22px;}
+.ct-l .h2{margin-bottom:26px;max-width:7em;}
+.ct-l p{color:var(--muted);font-size:14px;max-width:34ch;margin-bottom:16px;}
+.ct-l .lnk{margin-top:10px;}
+form{display:grid;gap:18px;}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.f label.t{display:block;font-size:12px;margin-bottom:8px;color:var(--ink);}
+.f .box{display:flex;align-items:center;background:var(--bg);border:1px solid transparent;border-radius:3px;transition:border-color .3s;}
+.f .box:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px rgba(242,181,15,.18);}
+.f .box.bad{border-color:#b5523b;}
+.f input[type=text],.f input[type=tel],.f input[type=email],.f select{width:100%;height:48px;padding:0 16px;background:transparent;border:0;outline:none;font-size:13.5px;}
+.f input::placeholder{color:#9a9a90;}
+.f .pre{padding-left:16px;font-size:13.5px;color:var(--muted);}
+.f .pre+input{padding-left:12px;}
+.f select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%236C6C63' stroke-width='1.3'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:38px;}
+.chk{display:flex;gap:12px;align-items:flex-start;font-size:12px;color:var(--muted);line-height:1.5;cursor:pointer;}
+.chk input{appearance:none;-webkit-appearance:none;width:16px;height:16px;flex:none;margin-top:1px;border:1px solid var(--muted);border-radius:2px;background:var(--bg);cursor:pointer;display:grid;place-items:center;transition:background .25s,border-color .25s;}
+.chk input:checked{background:var(--gold);border-color:var(--gold);}
+.chk input:checked::after{content:"";width:8px;height:4px;border-left:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(-45deg) translate(1px,-1px);}
+.chk.bad span{color:#b5523b;}
+.send{display:inline-flex;justify-content:space-between;align-items:center;gap:36px;width:max-content;max-width:100%;height:52px;padding:0 20px 0 24px;background:var(--gold);color:var(--ink);border-radius:3px;font-size:13.5px;font-weight:400;transition:background .3s,color .3s,gap .35s var(--ease);}
+.send:hover{background:var(--ink);color:var(--gold);gap:46px;}
+.note{font-size:11.5px;color:var(--muted);}
+.ok{display:none;padding:18px 20px;background:var(--bg);border-left:3px solid var(--gold);font-size:14px;}
+form.sent .ok{display:block;}
+form.sent .send,form.sent .note{display:none;}
+@media(max-width:860px){.ct-grid{grid-template-columns:1fr;}.row2{grid-template-columns:1fr;}}
+
+/* footer */
+footer{background:var(--dark);color:var(--bg);padding:clamp(54px,7vw,90px) 0 28px;}
+.ft{display:grid;grid-template-columns:1.8fr 1.2fr .6fr;gap:clamp(24px,5vw,80px);}
+.ft .ft-logo{width:min(100%,320px);height:auto;margin-bottom:26px;}
+.ft .big{font-family:var(--serif);font-weight:300;font-size:clamp(34px,3.7vw,54px);line-height:1;letter-spacing:-.02em;margin-bottom:22px;}
+.ft p{font-size:13.5px;opacity:.8;margin-bottom:4px;}
+.ft h4{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;font-weight:400;opacity:.65;margin-bottom:14px;}
+.ft .addr{font-size:15px;opacity:1;margin-bottom:2px;}
+.ft .small-t{margin-top:16px;font-size:12.5px;opacity:.65;}
+.ft a.so{display:block;font-size:15px;margin-bottom:8px;opacity:.9;transition:opacity .3s;}
+.ft a.so:hover{opacity:1;}
+.ft hr{grid-column:1/-1;border:0;border-top:1px solid rgba(245,242,234,.2);margin-top:20px;}
+.legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;font-size:12px;opacity:.8;}
+.legal nav{display:flex;gap:26px;flex-wrap:wrap;}
+@media(max-width:860px){.ft{grid-template-columns:1fr;}}
+
+/* overlays */
+#lb,#reel{position:fixed;inset:0;z-index:900;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:4vw;background:rgba(245,242,234,.97);}
+#lb.open,#reel.open{display:flex;}
+#lb img{max-width:min(1200px,92vw);max-height:80vh;object-fit:contain;}
+.x{height:42px;padding:0 20px;border-radius:30px;border:1px solid var(--line);font-size:12.5px;letter-spacing:.04em;background:var(--bg);align-self:flex-end;transition:background .3s,color .3s;}
+.x:hover{background:var(--ink);color:var(--bg);}
+#lb .x{align-self:center;}
+#reel .reel-in{width:min(1300px,100%,calc((100vh - 8vw - 64px) * 16 / 9));display:flex;flex-direction:column;gap:14px;}
+@supports (height:100dvh){#reel .reel-in{width:min(1300px,100%,calc((100dvh - 8vw - 64px) * 16 / 9));}}
+#reel .vp{width:100%;aspect-ratio:16/9;}
+.vp{position:relative;overflow:hidden;background:#000;}
+.vp video{display:block;width:100%;height:100%;object-fit:contain;}
+.vp-ui{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:14px;padding:46px 18px 16px;color:#fff;background:linear-gradient(to top,rgba(20,20,16,.65),rgba(20,20,16,0));opacity:0;transform:translateY(8px);transition:opacity .35s,transform .45s var(--ease);pointer-events:none;}
+.vp.show .vp-ui{opacity:1;transform:none;pointer-events:auto;}
+.vp-b{flex:none;width:42px;height:42px;border-radius:50%;background:rgba(245,242,234,.94);color:var(--ink);display:grid;place-items:center;transition:background .3s,color .3s,transform .35s var(--ease);}
+.vp-b:hover{background:var(--gold);color:var(--ink);transform:scale(1.06);}
+.vp-b svg{width:16px;height:16px;fill:currentColor;}
+.vp-b .i-pause,.vp-b .i-off{display:none;}
+.vp.playing .vp-b .i-play{display:none;}
+.vp.playing .vp-b .i-pause{display:block;}
+.vp-b.sm{width:36px;height:36px;background:rgba(245,242,234,.2);color:#fff;backdrop-filter:blur(8px);}
+.vp.muted .vp-b .i-on{display:none;}
+.vp.muted .vp-b .i-off{display:block;}
+.vp-time{flex:none;font-size:12px;font-variant-numeric:tabular-nums;min-width:84px;}
+.vp-bar{position:relative;flex:1;height:22px;display:flex;align-items:center;cursor:pointer;touch-action:none;}
+.vp-track{position:relative;width:100%;height:3px;background:rgba(245,242,234,.3);transition:height .25s;}
+.vp-bar:hover .vp-track,.vp-bar.drag .vp-track{height:5px;}
+.vp-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gold);}
+.vp-dot{position:absolute;top:50%;left:0;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;background:var(--bg);transform:scale(0);transition:transform .25s var(--ease);}
+.vp-bar:hover .vp-dot,.vp-bar.drag .vp-dot{transform:scale(1);}
+@media(max-width:560px){.vp-ui{gap:10px;padding:40px 12px 12px;}.vp-time{min-width:0;font-size:11px;}.vp-b{width:38px;height:38px;}.vp-b.sm{width:34px;height:34px;}}
+
+/* ===== yellow accents + section upgrades ===== */
+.y{color:var(--gold);}
+.h1 .y{color:var(--gold);}
+.ph[data-full]{transition:box-shadow .6s var(--ease),transform .6s var(--ease);}
+.ph[data-full]:hover{box-shadow:12px 12px 0 var(--gold);transform:translate(-6px,-6px);}
+.st-b .ph{box-shadow:10px 10px 0 var(--gold);}
+.st-b .ph:hover{box-shadow:16px 16px 0 var(--gold);}
+
+.facts>div{position:relative;padding-top:20px;}
+.facts>div::before{content:"";position:absolute;left:0;top:-1px;width:36px;height:3px;background:var(--gold);transition:width .8s var(--ease);}
+.facts.in>div::before{width:64px;}
+.ab-ph .c{box-shadow:0 0 0 7px var(--bg),0 0 0 9px var(--gold);}
+
+.it-row{position:relative;}
+.it-row::before{content:"";position:absolute;left:-18px;top:22px;width:3px;height:0;background:var(--gold);transition:height .5s var(--ease);}
+.it-row.on::before{height:30px;}
+.it-row h3::after{color:var(--ink);}
+.svc-left .stack{box-shadow:10px 10px 0 var(--gold);}
+
+.proc{position:relative;}
+.proc::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line);}
+.proc::after{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--gold);transition:width 2.2s var(--ease) .2s;}
+.proc.go::after{width:100%;}
+.step{border-top:0;padding-top:34px;position:relative;}
+.step::before{content:"";position:absolute;left:0;top:-4px;width:9px;height:9px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 2px var(--ink);transition:background .5s,box-shadow .5s;}
+.step.in::before{background:var(--gold);box-shadow:inset 0 0 0 2px var(--gold);}
+.step b{color:var(--gold-ink);}
+
+.feat::before{content:"\201C";position:absolute;left:0;top:-.18em;font-family:var(--serif);font-weight:300;font-size:clamp(90px,11vw,170px);line-height:1;color:var(--gold);pointer-events:none;}
+@media(max-width:860px){.feat::before{position:static;display:block;height:.5em;font-size:90px;margin-bottom:6px;}}
+.small button{position:relative;padding-top:16px;}
+.small button::before{content:"";position:absolute;left:0;top:0;width:0;height:2px;background:var(--gold);transition:width .5s var(--ease);}
+.small button:hover::before{width:44px;}
+
+.band{background:var(--gold);color:var(--ink);padding:clamp(54px,7vw,100px) 0;overflow:hidden;position:relative;}
+.band .wrap{display:flex;align-items:center;justify-content:space-between;gap:clamp(24px,5vw,80px);flex-wrap:wrap;}
+.band .eyebrow{color:var(--ink);opacity:.7;display:block;margin-bottom:16px;}
+.band h2{font-family:var(--serif);font-weight:300;font-size:clamp(34px,5vw,76px);line-height:1;letter-spacing:-.02em;max-width:13em;}
+.band h2 em{font-style:italic;}
+.go-btn{flex:none;width:clamp(96px,9vw,128px);height:clamp(96px,9vw,128px);border-radius:50%;background:var(--ink);color:var(--gold);display:grid;place-items:center;font-size:clamp(30px,3vw,42px);transition:transform .5s var(--ease),background .3s,color .3s;}
+.go-btn:hover{transform:rotate(45deg) scale(1.06);background:var(--bg);color:var(--ink);}
+
+.ft{position:relative;}
+footer{border-top:4px solid var(--gold);}
+.ft a.so:hover,.legal a:hover{color:var(--gold);opacity:1;}
+.ft h4{color:var(--gold);opacity:1;}
+.lnk .arrow{color:var(--gold-ink);}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap hd">
+    <a class="hd-logo" href="#top" aria-label="Real Wedding Apulia"><img src="logo.png" alt="Real Wedding Apulia"></a>
+    <nav>
+      <a href="#top" class="on">Home</a>
+      <a href="#about">About</a>
+      <a href="#servizi"><span class="it">Servizi</span><span class="en">Services</span></a>
+      <a href="#contatti"><span class="it">Contatti</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="hd-r">
+      <div class="lang"><button data-l="it" class="on">IT</button><button data-l="en">EN</button></div>
+      <a class="cta-top" href="#contatti"><span><span class="it">Raccontateci di voi</span><span class="en">Tell us about you</span></span><span class="arrow">&#8599;</span></a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+<div id="drawer">
+  <a href="#top">Home</a><a href="#about">About</a>
+  <a href="#servizi"><span class="it">Servizi</span><span class="en">Services</span></a>
+  <a href="#contatti"><span class="it">Contatti</span><span class="en">Contact</span></a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <span class="eyebrow"><span class="it">Fotografia di matrimonio · Lecce, Salento, Puglia</span><span class="en">Wedding photography · Lecce, Salento, Puglia</span></span>
+        <h1 class="h1">
+          <span class="ln"><span><span class="it">Ciò che sentite<span class="y">.</span></span><span class="en">What you feel<span class="y">.</span></span></span></span>
+          <span class="ln"><span><span class="it">Ciò che resta<span class="y">.</span></span><span class="en">What remains<span class="y">.</span></span></span></span>
+        </h1>
+      </div>
+      <div class="hero-side">
+        <p><span class="it">I momenti più belli non si mettono in posa. Si vivono. E diventano il vostro racconto.</span><span class="en">The best moments can't be posed. They're lived. And they become your story.</span></p>
+        <a class="lnk" href="#sguardo"><span class="it">Scoprite il reportage</span><span class="en">Discover the reportage</span><span>&darr;</span></a>
+      </div>
+    </div>
+    <div class="hero-media rv">
+      <video autoplay muted loop playsinline preload="auto" poster="homepage/timing-perfetto-foto-matrimonio-lecce-salento.jpg"><source src="homepage/love-hero.mp4" type="video/mp4"></video>
+      <button class="play" id="playBtn"><i></i><span class="it">Guarda il film</span><span class="en">Watch the film</span></button>
+    </div>
+    <p class="cap"><span class="it">Un bacio, la luce, tutto il resto. - Real Wedding Apulia</span><span class="en">A kiss, the light, everything else. - Real Wedding Apulia</span></p>
+  </div>
+</section>
+
+<!-- SGUARDO -->
+<section class="sg" id="sguardo">
+  <div class="wrap">
+    <span class="eyebrow rv"><span class="it">Il nostro sguardo</span><span class="en">Our way of seeing</span></span>
+    <div class="rv d1">
+      <h2 class="h2"><span class="it">Il vostro giorno, così com'è.<br>Intenso. Imperfetto. Vero.</span><span class="en">Your day, just as it is.<br>Intense. Imperfect. True.</span></h2>
+      <div class="sg-cols">
+        <p><span class="it">Con il reportage catturiamo i momenti più coinvolgenti delle vostre nozze: uno sguardo, un abbraccio, la gioia che arriva senza avvisare.</span><span class="en">With reportage we capture the most moving moments of your wedding: a glance, an embrace, joy that arrives without warning.</span></p>
+        <p><span class="it">Ogni fotografia custodisce la vostra essenza. Immagini uniche, per ritrovare nel tempo le emozioni di quel giorno.</span><span class="en">Every photograph holds your essence. Unique images, to find the emotions of that day again over time.</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:clamp(50px,6vw,90px)"><hr class="rule"></div>
+</section>
+
+<!-- STORIES -->
+<section class="sec" style="padding-top:clamp(30px,4vw,60px)">
+  <div class="wrap">
+    <div class="stories-head">
+      <div class="rv"><span class="eyebrow"><span class="it">Dentro le storie</span><span class="en">Inside the stories</span></span><h2 class="h2"><span class="it">Non solo fotografie.<br>Un modo di ricordare.</span><span class="en">Not just photographs.<br>A way of remembering.</span></h2></div>
+      <p class="rv d1"><span class="it">Tre fili di uno stesso racconto: i luoghi, la complicità, le persone che portate nel cuore.</span><span class="en">Three threads of the same story: the places, the closeness, the people you carry in your heart.</span></p>
+    </div>
+    <div class="st">
+      <div class="st-a rv">
+        <div class="ph" data-full="homepage/first-look-fotografo-matrimonio-lecce-salento-puglia.jpg"><img src="homepage/first-look-fotografo-matrimonio-lecce-salento-puglia.jpg" alt="" loading="lazy"></div>
+        <p class="cap"><span class="it">Momenti di complicità / Quando il mondo si fa piccolo.</span><span class="en">Moments of closeness / When the world gets small.</span></p>
+      </div>
+      <div class="st-b rv d1">
+        <div class="ph" data-full="homepage/fotografo-matrimonio-brindisi-location-puglia-salento-lece-768x512.jpg"><img src="homepage/fotografo-matrimonio-brindisi-location-puglia-salento-lece-768x512.jpg" alt="" loading="lazy"></div>
+        <p class="cap"><span class="it">Immagini ambientate / La gioia abita i luoghi.</span><span class="en">Settings / Joy lives in places.</span></p>
+        <h3 class="h3"><span class="it">Tra voi e il mondo.</span><span class="en">Between you and the world.</span></h3>
+        <p class="muted"><span class="it">La bellezza del Salento, le vostre emozioni. Nessuna delle due fa solo da sfondo.</span><span class="en">The beauty of Salento, your emotions. Neither one is just a backdrop.</span></p>
+      </div>
+      <div class="st-c">
+        <div class="tx rv">
+          <span class="eyebrow"><span class="it">Ricordi del cuore</span><span class="en">Memories of the heart</span></span>
+          <h3 class="h3"><span class="it">Tutto quello che<br>non si può ripetere.</span><span class="en">Everything that<br>can't be repeated.</span></h3>
+          <p><span class="it">Gli amici, un brindisi, una risata che prende tutti. La fotografia conserva anche ciò che, nel giorno del matrimonio, passa in un istante.</span><span class="en">Friends, a toast, a laugh that takes everyone. Photography also keeps what, on a wedding day, passes in an instant.</span></p>
+        </div>
+        <div class="im rv d1">
+          <div class="ph" data-full="homepage/costo-foto-matrimonio-lecce-salento.jpg"><img src="homepage/costo-foto-matrimonio-lecce-salento.jpg" alt="" loading="lazy"></div>
+          <p class="cap"><span class="it">La festa / Il ricordo ha il suono delle vostre risate.</span><span class="en">The party / Memory sounds like your laughter.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<section class="strip">
+  <div class="wrap strip-head rv"><div><span class="eyebrow"><span class="it">Altri istanti</span><span class="en">More moments</span></span></div><span class="hint"><span class="it">Trascina &rarr;</span><span class="en">Drag &rarr;</span></span></div>
+  <div class="rail rv" id="rail">
+    <figure data-full="homepage/timing-perfetto-foto-matrimonio-lecce-salento.jpg"><img src="homepage/timing-perfetto-foto-matrimonio-lecce-salento.jpg" alt="" loading="lazy" draggable="false"></figure>
+    <figure data-full="homepage/matrimonio-cala-dei-balcani-lecce-768x513.webp"><img src="homepage/matrimonio-cala-dei-balcani-lecce-768x513.webp" alt="" loading="lazy" draggable="false"></figure>
+    <figure data-full="homepage/masserie-ville-castelli-matrimonio-lecce-salento.jpg"><img src="homepage/masserie-ville-castelli-matrimonio-lecce-salento.jpg" alt="" loading="lazy" draggable="false"></figure>
+    <figure data-full="homepage/foto-reportage-cala-dei-balcani-santa-cesarea-terme-salento.jpg"><img src="homepage/foto-reportage-cala-dei-balcani-santa-cesarea-terme-salento.jpg" alt="" loading="lazy" draggable="false"></figure>
+    <figure data-full="homepage/tamaramirkowedd-768x512.jpg"><img src="homepage/tamaramirkowedd-768x512.jpg" alt="" loading="lazy" draggable="false"></figure>
+    <figure data-full="homepage/fotografo-matrimonio-lecce-preparativi-sposa-122-768x513.webp"><img src="homepage/fotografo-matrimonio-lecce-preparativi-sposa-122-768x513.webp" alt="" loading="lazy" draggable="false"></figure>
+    <figure data-full="homepage/servizi-aggiuntivi-drone-film-photobooth-lecce.jpg"><img src="homepage/servizi-aggiuntivi-drone-film-photobooth-lecce.jpg" alt="" loading="lazy" draggable="false"></figure>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="svc sec" id="servizi">
+  <div class="wrap svc-grid">
+    <div class="svc-left rv">
+      <div class="stack" id="stack">
+        <img class="on" src="homepage/post-produzione-scatti-matrimonio-lecce-salento-puglia.jpg" alt="">
+        <img src="homepage/contratto-matrimonio-fotografo-diritti-garanzie-doveri.jpg" alt="">
+        <img src="homepage/masserie-ville-castelli-matrimonio-lecce-salento.jpg" alt="">
+      </div>
+      <p class="cap" id="stackCap">
+        <span class="c on"><span class="it">Anche i dettagli hanno una storia da raccontare.</span><span class="en">Even the details have a story to tell.</span></span>
+      </p>
+      <p class="muted"><span class="it">Immaginate il momento in cui tutto questo diventerà realtà. Il vostro matrimonio, da vivere prima ancora che da fotografare.</span><span class="en">Imagine the moment when all this becomes real. Your wedding, to be lived before it's photographed.</span></p>
+    </div>
+    <div class="svc-right rv d1">
+      <span class="eyebrow"><span class="it">Il racconto, con cura</span><span class="en">The story, with care</span></span>
+      <h2 class="h2"><span class="it">Ogni storia merita<br>il suo sguardo.</span><span class="en">Every story deserves<br>its own eye.</span></h2>
+      <div class="svc-list" id="svcList">
+        <div class="it-row on" data-i="0"><h3><span class="it">Il reportage di matrimonio</span><span class="en">Wedding reportage</span></h3><p><span class="it">Il vostro giorno, le vostre emozioni, la vostra storia. Attimi che diventano il ricordo più vivido, senza interrompere ciò che accade.</span><span class="en">Your day, your emotions, your story. Moments that become the most vivid memory, without interrupting what happens.</span></p></div>
+        <div class="it-row" data-i="1"><h3><span class="it">La cura delle immagini</span><span class="en">Care for the images</span></h3><p><span class="it">Dalla scelta degli scatti alla post-produzione: attenzione a ogni fotografia, per mantenere intatta la sincerità del racconto.</span><span class="en">From choosing the shots to post-production: attention to every photograph, keeping the sincerity of the story intact.</span></p></div>
+        <div class="it-row" data-i="2"><h3><span class="it">Altri modi di raccontarvi</span><span class="en">Other ways to tell your story</span></h3><p><span class="it">Drone, film e photobooth. Possibilità da esplorare insieme, a partire da ciò che state immaginando per le vostre nozze.</span><span class="en">Drone, film and photobooth. Possibilities to explore together, starting from what you're imagining for your wedding.</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about" style="padding-bottom:clamp(40px,5vw,70px)">
+  <div class="wrap">
+    <div class="ab">
+      <div class="ab-ph rv"><div class="c"><img src="homepage/antonio-circle.png" alt="Antonio Cantoro"></div><span>Antonio Cantoro</span></div>
+      <div class="ab-mid rv d1">
+        <span class="eyebrow"><span class="it">Dietro l'obiettivo</span><span class="en">Behind the lens</span></span>
+        <h2 class="h2"><span class="it">Piacere, Antonio.</span><span class="en">Nice to meet you, Antonio.</span></h2>
+        <p><span class="it">Oltre trent'anni di esperienza e una tradizione di famiglia. Ma prima di tutto, la voglia di guardare ogni storia con attenzione, senza forzarla.</span><span class="en">Over thirty years of experience and a family tradition. But first of all, the desire to look at every story with care, without forcing it.</span></p>
+      </div>
+      <div class="ab-r rv d2">
+        <p><span class="it">Credo nella bellezza sincera delle cose. E nei ricordi che non temono il passare del tempo.</span><span class="en">I believe in the sincere beauty of things. And in memories that don't fear the passing of time.</span></p>
+        <a class="lnk" href="#sguardo"><span class="it">Conoscete il mio sguardo</span><span class="en">Get to know my eye</span><span class="arrow">&#8599;</span></a>
+      </div>
+    </div>
+    <div class="facts rv">
+      <div><b data-count="30" data-suffix="+">30+</b><span><span class="it">anni di esperienza</span><span class="en">years of experience</span></span></div>
+      <div><b>5,0</b><span><span class="it">su Matrimonio.com</span><span class="en">on Matrimonio.com</span></span></div>
+      <div><b data-count="3">3</b><span><span class="it">generazioni di fotografi</span><span class="en">generations of photographers</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec" style="padding-top:clamp(40px,5vw,70px)">
+  <div class="wrap">
+    <span class="eyebrow rv"><span class="it">Come lavoriamo</span><span class="en">How we work</span></span>
+    <h2 class="h2 rv d1" style="margin-top:16px;max-width:14em"><span class="it">Dal primo messaggio all'ultimo ricordo.</span><span class="en">From the first message to the last memory.</span></h2>
+    <div class="proc" id="proc">
+      <div class="step rv"><b>01</b><h3><span class="it">Ci conosciamo</span><span class="en">We meet</span></h3><p><span class="it">Un messaggio o una chiamata: data, luogo e come immaginate la giornata.</span><span class="en">A message or a call: the date, the venue and how you imagine the day.</span></p></div>
+      <div class="step rv d1"><b>02</b><h3><span class="it">Ci prepariamo</span><span class="en">We prepare</span></h3><p><span class="it">Un servizio pre-matrimonio per prendere confidenza, prima del giorno vero.</span><span class="en">A pre-wedding session to get comfortable before the real day.</span></p></div>
+      <div class="step rv d2"><b>03</b><h3><span class="it">Il giorno</span><span class="en">The day</span></h3><p><span class="it">Foto, film e drone insieme. Antonio osserva e racconta, senza dirigere.</span><span class="en">Photos, film and drone together. Antonio observes and tells, without directing.</span></p></div>
+      <div class="step rv d3"><b>04</b><h3><span class="it">I ricordi</span><span class="en">The memories</span></h3><p><span class="it">Selezione, colore, album e film: un unico racconto da conservare.</span><span class="en">Selection, colour, album and film: one story to keep.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="sposi" style="padding-top:0">
+  <div class="wrap"><hr class="rule" style="margin-bottom:clamp(40px,5vw,70px)">
+    <div class="rev-top rv"><span class="eyebrow"><span class="it">Le vostre parole</span><span class="en">Your words</span></span><span><span class="it">5,0 / 5,0 su Matrimonio.com</span><span class="en">5.0 / 5.0 on Matrimonio.com</span></span></div>
+    <div class="feat" id="feat" aria-live="polite">
+      <blockquote id="fq"></blockquote>
+      <div class="who" id="fw"></div>
+    </div>
+    <div class="small" id="small"></div>
+  </div>
+</section>
+
+<!-- BAND -->
+<section class="band">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow"><span class="it">Disponibile 2026 / 2027</span><span class="en">Booking 2026 / 2027</span></span>
+      <h2><span class="it">Il vostro giorno potrebbe essere <em>il prossimo.</em></span><span class="en">Your day could be <em>the next one.</em></span></h2>
+    </div>
+    <a class="go-btn rv d1" href="#contatti" aria-label="Contatti">&#8599;</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="ct sec" id="contatti">
+  <div class="wrap ct-grid">
+    <div class="ct-l rv">
+      <span class="eyebrow"><span class="it">Cominciamo da voi</span><span class="en">Let's start with you</span></span>
+      <h2 class="h2"><span class="it">Ogni racconto inizia con un incontro.</span><span class="en">Every story begins with a meeting.</span></h2>
+      <p><span class="it">Siamo pronti ad ascoltare le vostre idee e quello che state organizzando per il vostro matrimonio.</span><span class="en">We're ready to hear your ideas and what you're planning for your wedding.</span></p>
+      <p><span class="it">Ci incontriamo in studio, su appuntamento, oppure con una prima videochiamata informativa.</span><span class="en">We meet at the studio, by appointment, or with a first informal video call.</span></p>
+      <a class="lnk" href="https://wa.me/393480734783" target="_blank" rel="noopener">WhatsApp · +39 348 073 4783 <span class="arrow">&#8599;</span></a>
+    </div>
+    <form class="f rv d1" id="form" novalidate>
+      <div><label class="t" for="f1"><span class="it">Nome e Cognome</span><span class="en">Full name</span></label><div class="box" id="b1"><input id="f1" type="text" autocomplete="name" data-ph-it="Come vi chiamate?" data-ph-en="What are your names?" placeholder="Come vi chiamate?"></div></div>
+      <div><label class="t" for="f2"><span class="it">Contatto WhatsApp</span><span class="en">WhatsApp contact</span></label><div class="box" id="b2"><span class="pre">+39</span><input id="f2" type="tel" autocomplete="tel-national" data-ph-it="Il vostro numero" data-ph-en="Your number" placeholder="Il vostro numero"></div></div>
+      <div class="row2">
+        <div><label class="t" for="f3"><span class="it">Tipo di richiesta</span><span class="en">Request type</span></label><div class="box"><select id="f3"><option value="matrimonio" data-it="Matrimonio" data-en="Wedding">Matrimonio</option><option value="pre" data-it="Pre-matrimonio" data-en="Pre-wedding">Pre-matrimonio</option><option value="film" data-it="Film e drone" data-en="Film and drone">Film e drone</option><option value="altro" data-it="Altro" data-en="Other">Altro</option></select></div></div>
+        <div><label class="t" for="f4"><span class="it">Data o periodo dell'evento</span><span class="en">Event date or period</span></label><div class="box"><input id="f4" type="text" data-ph-it="Quando lo immaginate?" data-ph-en="When are you imagining it?" placeholder="Quando lo immaginate?"></div></div>
+      </div>
+      <label class="chk" id="chk"><input type="checkbox" id="f5"><span><span class="it">Ho letto la Privacy Policy e acconsento al trattamento dei dati per questa richiesta.</span><span class="en">I have read the Privacy Policy and consent to my data being processed for this request.</span></span></label>
+      <button class="send" type="submit"><span><span class="it">Invia la tua Richiesta</span><span class="en">Send your request</span></span><span class="arrow">&#8599;</span></button>
+      <p class="note"><span class="it">Dopo l'invio riceverai un messaggio di conferma su WhatsApp.</span><span class="en">After sending, you'll receive a confirmation message on WhatsApp.</span></p>
+      <div class="ok" role="status"><span class="it">Grazie! Antonio ti risponderà presto su WhatsApp.</span><span class="en">Thank you! Antonio will reply soon on WhatsApp.</span></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><img class="ft-logo" src="logo-light.png" alt="Real Wedding Apulia"><p><span class="it">Fotografia di matrimonio, con sincerità.</span><span class="en">Wedding photography, with sincerity.</span></p><p>Lecce · Salento · Puglia</p></div>
+      <div><h4><span class="it">Incontriamoci</span><span class="en">Let's meet</span></h4><p class="addr">Via Paisiello 27, Supersano</p><p class="addr">+39 348 073 4783</p><p class="small-t"><span class="it">Studio su appuntamento. Anche con una prima videochiamata informativa.</span><span class="en">Studio by appointment. Also with a first informal video call.</span></p></div>
+      <div><a class="so" href="#">Instagram <span class="arrow">&#8599;</span></a><a class="so" href="#">Facebook <span class="arrow">&#8599;</span></a><a class="so" href="#">TikTok <span class="arrow">&#8599;</span></a><a class="so" href="#">YouTube <span class="arrow">&#8599;</span></a></div>
+      <hr>
+    </div>
+    <div class="legal"><span>&copy; 2026 Real Wedding Apulia</span><nav><a href="#top">Home</a><a href="#about">About</a><a href="#servizi"><span class="it">Servizi</span><span class="en">Services</span></a><a href="#contatti"><span class="it">Contatti</span><span class="en">Contact</span></a><a href="#">Privacy Policy</a></nav></div>
+  </div>
+</footer>
+
+<div id="lb"><button class="x" id="lbx"><span class="it">Chiudi</span><span class="en">Close</span></button><img id="lbi" src="" alt=""></div>
+<div id="reel"><div class="reel-in"><button class="x" id="reelx"><span class="it">Chiudi</span><span class="en">Close</span></button><div class="vp" id="reelBox"><video id="reelv" playsinline preload="none"><source src="homepage/love-film.mp4" type="video/mp4"></video></div></div></div>
+
+<script>
+(function(){
+  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+  const root=document.documentElement;
+  const lang=()=>root.dataset.lang;
+
+  /* reviews data */
+  const REV=[
+    {it:'Le tue fotografie hanno catturato ogni emozione e momento speciale, rendendo il nostro giorno indimenticabile.',en:'Your photographs captured every emotion and special moment, making our day unforgettable.',who:'Irene & Raffaele'},
+    {it:'Il Top del Top! Non si può trovare di meglio! Pazienza, professionalità, sensibilità…',en:'The best of the best! You can\'t find better! Patience, professionalism, sensitivity…',who:'Lucia & Giulio'},
+    {it:'Arte, passione e professionalità allo stato puro.',en:'Art, passion and pure professionalism.',who:'Alessandra & Alessandro'},
+    {it:'Antonio è una persona speciale che unisce una grande professionalità alla sua passione.',en:'Antonio is a special person who joins great professionalism with his passion.',who:{it:'Una coppia, 2022',en:'A couple, 2022'}}
+  ];
+  let cur=0;
+  const whoTxt=r=>typeof r.who==='string'?r.who:r.who[lang()];
+  function renderRev(){
+    const r=REV[cur];
+    $('#fq').textContent='“'+r[lang()]+'”'; $('#fw').textContent=whoTxt(r);
+    const sm=$('#small'); sm.innerHTML='';
+    REV.forEach((x,i)=>{ if(i===cur) return;
+      const b=document.createElement('button'); b.type='button';
+      b.innerHTML='<p></p><span></span>'; $('p',b).textContent='“'+x[lang()]+'”'; $('span',b).textContent=whoTxt(x);
+      b.addEventListener('click',()=>{ const f=$('#feat'); f.classList.add('swap'); setTimeout(()=>{ cur=i; renderRev(); f.classList.remove('swap'); },380); });
+      sm.appendChild(b);
+    });
+  }
+  renderRev();
+
+  /* language */
+  function setLang(l){
+    root.dataset.lang=l; root.lang=l;
+    $$('[data-l]').forEach(x=>x.classList.toggle('on',x.dataset.l===l));
+    $$('[data-ph-it]').forEach(i=>i.placeholder=i.dataset['ph'+l.charAt(0).toUpperCase()+l.slice(1)]);
+    $$('option[data-it]').forEach(o=>o.textContent=o.dataset[l]);
+    renderRev();
+  }
+  $$('[data-l]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.l)));
+
+  /* header + active link */
+  const hdr=$('#hdr'); let ly=0;
+  addEventListener('scroll',()=>{ const y=scrollY; hdr.classList.toggle('solid',y>20); hdr.classList.toggle('hide',y>ly&&y>420); ly=y; },{passive:true});
+  const secs=['top','about','servizi','contatti'].map(id=>document.getElementById(id));
+  const navs=$$('.hd nav a');
+  const navIO=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ navs.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)); } }),{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(s=>s&&navIO.observe(s));
+
+  /* mobile menu */
+  const drawer=$('#drawer'), burger=$('#burger');
+  function menu(o){ drawer.classList.toggle('open',o); document.body.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o); document.body.style.overflow=o?'hidden':''; }
+  burger.addEventListener('click',()=>menu(!drawer.classList.contains('open')));
+  $$('#drawer a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+
+  /* reveal */
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  $$('.rv').forEach(el=>io.observe(el));
+
+
+  /* process line */
+  new IntersectionObserver((es,o)=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('go'); o.unobserve(e.target); } }),{threshold:.3}).observe($('#proc'));
+
+  /* count up */
+  const co=new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return; co.unobserve(e.target);
+    const el=e.target,to=+el.dataset.count,suf=el.dataset.suffix||'',t0=performance.now();
+    (function step(t){ const k=Math.min(1,(t-t0)/1400); el.textContent=Math.round(to*(1-Math.pow(1-k,3)))+suf; if(k<1) requestAnimationFrame(step); })(t0);
+  }),{threshold:.6});
+  $$('[data-count]').forEach(el=>co.observe(el));
+
+  /* services */
+  const rows=$$('.it-row'), imgs=$$('#stack img');
+  const CAPS=[
+    {it:'Anche i dettagli hanno una storia da raccontare.',en:'Even the details have a story to tell.'},
+    {it:'Un brindisi, in bianco e nero.',en:'A toast, in black and white.'},
+    {it:'Il vostro luogo, visto dall\'alto.',en:'Your venue, seen from above.'}
+  ];
+  function setSvc(i){
+    rows.forEach((r,j)=>r.classList.toggle('on',i===j)); imgs.forEach((m,j)=>m.classList.toggle('on',i===j));
+    $('#stackCap').innerHTML='<span class="it"></span><span class="en"></span>'; $('#stackCap .it').textContent=CAPS[i].it; $('#stackCap .en').textContent=CAPS[i].en;
+  }
+  rows.forEach((r,i)=>{ r.addEventListener('click',()=>setSvc(i)); r.addEventListener('mouseenter',()=>{ if(matchMedia('(hover:hover)').matches) setSvc(i); }); });
+
+  /* drag rail */
+  const rail=$('#rail'); let down=false,sx=0,sl=0,moved=false;
+  rail.addEventListener('pointerdown',e=>{ if(e.pointerType!=='mouse') return; down=true; moved=false; sx=e.clientX; sl=rail.scrollLeft; rail.classList.add('drag'); });
+  addEventListener('pointermove',e=>{ if(!down) return; const dx=e.clientX-sx; if(Math.abs(dx)>4) moved=true; rail.scrollLeft=sl-dx; });
+  addEventListener('pointerup',()=>{ down=false; rail.classList.remove('drag'); });
+
+  /* lightbox */
+  const lb=$('#lb'), lbi=$('#lbi');
+  function openLb(src){ lbi.src=src; lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  $$('[data-full]').forEach(el=>el.addEventListener('click',()=>{ if(moved){ moved=false; return; } openLb(el.dataset.full); }));
+  function closeAll(){ lb.classList.remove('open'); reel.classList.remove('open'); rv.pause(); document.body.style.overflow=''; }
+  $('#lbx').addEventListener('click',closeAll); lb.addEventListener('click',e=>{ if(e.target===lb) closeAll(); });
+  addEventListener('keydown',e=>{ if(e.key==='Escape'){ menu(false); closeAll(); } });
+
+  /* custom video player */
+  const reel=$('#reel'), rv=$('#reelv');
+  const ICON={
+    play:'<svg class="i-play" viewBox="0 0 16 16"><path d="M4 2.5v11l9.5-5.5z"/></svg><svg class="i-pause" viewBox="0 0 16 16"><path d="M3.5 2h3v12h-3zM9.5 2h3v12h-3z"/></svg>',
+    vol:'<svg class="i-on" viewBox="0 0 16 16"><path d="M2 6v4h3l4 3.5v-11L5 6z"/><path d="M11 5.2a4 4 0 0 1 0 5.6M12.8 3.4a6.6 6.6 0 0 1 0 9.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><svg class="i-off" viewBox="0 0 16 16"><path d="M2 6v4h3l4 3.5v-11L5 6z"/><path d="M11.5 6l3.5 4M15 6l-3.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>',
+    fs:'<svg viewBox="0 0 16 16"><path d="M2 6V2h4v1.5H3.5V6zM10 2h4v4h-1.5V3.5H10zM14 10v4h-4v-1.5h2.5V10zM6 14H2v-4h1.5v2.5H6z"/></svg>'
+  };
+  const fmt=t=>{ t=Math.max(0,Math.floor(t||0)); return Math.floor(t/60)+':'+String(t%60).padStart(2,'0'); };
+  (function makePlayer(box,vid){
+    const ui=document.createElement('div'); ui.className='vp-ui';
+    ui.innerHTML='<button class="vp-b" aria-label="Play / Pause">'+ICON.play+'</button><div class="vp-bar" role="slider" aria-label="Seek" tabindex="0"><div class="vp-track"><div class="vp-fill"></div><div class="vp-dot"></div></div></div><span class="vp-time">0:00 / 0:00</span><button class="vp-b sm vp-mute" aria-label="Mute">'+ICON.vol+'</button><button class="vp-b sm vp-fs" aria-label="Fullscreen">'+ICON.fs+'</button>';
+    box.appendChild(ui); box.tabIndex=0;
+    const q=s=>ui.querySelector(s), bar=q('.vp-bar'), fill=q('.vp-fill'), dot=q('.vp-dot'), time=q('.vp-time');
+    let hideT, dragging=false;
+    const toggle=()=>{ vid.paused? vid.play().catch(()=>{}) : vid.pause(); };
+    const paint=()=>{ const d=vid.duration||0,k=d?vid.currentTime/d:0; fill.style.width=(k*100)+'%'; dot.style.left=(k*100)+'%'; time.textContent=fmt(vid.currentTime)+' / '+fmt(d); };
+    const wake=()=>{ box.classList.add('show'); clearTimeout(hideT); if(!vid.paused&&!dragging) hideT=setTimeout(()=>box.classList.remove('show'),2300); };
+    ['timeupdate','loadedmetadata','durationchange'].forEach(ev=>vid.addEventListener(ev,paint));
+    vid.addEventListener('play',()=>{ box.classList.add('playing'); wake(); });
+    vid.addEventListener('pause',()=>{ box.classList.remove('playing'); box.classList.add('show'); clearTimeout(hideT); });
+    vid.addEventListener('ended',()=>{ box.classList.remove('playing'); box.classList.add('show'); });
+    vid.addEventListener('volumechange',()=>box.classList.toggle('muted',vid.muted||vid.volume===0));
+    box.addEventListener('mousemove',wake); box.addEventListener('touchstart',wake,{passive:true});
+    box.addEventListener('mouseleave',()=>{ if(!vid.paused) box.classList.remove('show'); });
+    vid.addEventListener('click',e=>{ e.stopPropagation(); toggle(); });
+    q('.vp-b').addEventListener('click',e=>{ e.stopPropagation(); toggle(); });
+    q('.vp-mute').addEventListener('click',e=>{ e.stopPropagation(); vid.muted=!vid.muted; });
+    q('.vp-fs').addEventListener('click',e=>{ e.stopPropagation(); if(document.fullscreenElement) document.exitFullscreen(); else if(box.requestFullscreen) box.requestFullscreen(); else if(vid.webkitEnterFullscreen) vid.webkitEnterFullscreen(); });
+    const seek=e=>{ const r=bar.getBoundingClientRect(),k=Math.min(1,Math.max(0,(e.clientX-r.left)/r.width)); if(vid.duration) vid.currentTime=k*vid.duration; paint(); };
+    bar.addEventListener('pointerdown',e=>{ e.stopPropagation(); dragging=true; bar.classList.add('drag'); bar.setPointerCapture(e.pointerId); seek(e); });
+    bar.addEventListener('pointermove',e=>{ if(dragging) seek(e); });
+    const end=()=>{ dragging=false; bar.classList.remove('drag'); wake(); };
+    bar.addEventListener('pointerup',end); bar.addEventListener('pointercancel',end); bar.addEventListener('click',e=>e.stopPropagation());
+    bar.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){ vid.currentTime+=5; e.preventDefault(); } if(e.key==='ArrowLeft'){ vid.currentTime-=5; e.preventDefault(); } });
+    box.addEventListener('keydown',e=>{ if(e.target!==box) return; if(e.key===' '||e.key==='k'){ e.preventDefault(); toggle(); } if(e.key==='m') vid.muted=!vid.muted; if(e.key==='f') q('.vp-fs').click(); });
+    box.classList.add('show'); paint();
+  })($('#reelBox'),rv);
+  $('#playBtn').addEventListener('click',()=>{ reel.classList.add('open'); document.body.style.overflow='hidden'; rv.currentTime=0; rv.play().catch(()=>{}); });
+  $('#reelx').addEventListener('click',closeAll);
+
+  /* form (demo, no backend) */
+  const form=$('#form');
+  form.addEventListener('submit',e=>{
+    e.preventDefault(); let ok=true;
+    const n=$('#f1'), p=$('#f2'), c=$('#f5');
+    $('#b1').classList.toggle('bad',!n.value.trim()); if(!n.value.trim()) ok=false;
+    const badP=p.value.replace(/\D/g,'').length<6; $('#b2').classList.toggle('bad',badP); if(badP) ok=false;
+    $('#chk').classList.toggle('bad',!c.checked); if(!c.checked) ok=false;
+    if(ok) form.classList.add('sent');
+  });
+})();
+</script>
+</body>
+</html>
